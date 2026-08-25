@@ -1,0 +1,10 @@
+{
+  "name": "relay-realtime-chat",
+  "version": "1.0.0",
+  "description": "A real-time multi-room chat application built with Node.js, Express and Socket.IO.",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "dev": "node server.js"},
+  "author": "Shivesh",
+  "license": "MIT",
+  "dependencies": {"express": "^5.1.0", "socket.io": "^4.8.1"}
+}
