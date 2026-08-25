@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Relay is a real-time multi-room chat app built with Node.js, Express and Socket.IO." />
+  <title>Relay | Real-Time Chat</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="joinView" class="join-view">
+    <div class="join-card">
+      <div class="brand-mark">R</div>
+      <span class="eyebrow">REAL-TIME CHAT</span>
+      <h1>Relay</h1>
+      <p>Join a room and start chatting instantly. No account or database required.</p>
+      <form id="joinForm">
+        <label><span>Display name</span><input id="usernameInput" maxlength="24" autocomplete="nickname" placeholder="Your name" required /></label>
+        <label><span>Room</span><select id="roomSelect"><option value="general">General</option><option value="development">Development</option><option value="college">College</option><option value="random">Random</option></select></label>
+        <button class="primary-btn" type="submit">Enter Relay</button>
+      </form>
+    </div>
+  </div>
+
+  <main id="chatView" class="chat-app hidden">
+    <aside class="sidebar">
+      <div class="sidebar-brand"><div class="brand-mark small">R</div><div><strong>Relay</strong><span>Real-time chat</span></div></div>
+      <div class="section-label">ROOMS</div>
+      <nav class="room-list">
+        <button class="room-btn active" data-room="general"><span># general</span><small data-count="general">0</small></button>
+        <button class="room-btn" data-room="development"><span># development</span><small data-count="development">0</small></button>
+        <button class="room-btn" data-room="college"><span># college</span><small data-count="college">0</small></button>
+        <button class="room-btn" data-room="random"><span># random</span><small data-count="random">0</small></button>
+      </nav>
+      <div class="section-label users-label">ONLINE</div>
+      <div id="onlineUsers" class="online-users"></div>
+      <div class="sidebar-user"><div id="sidebarAvatar" class="avatar">U</div><div><strong id="sidebarUsername">User</strong><span><i></i> Online</span></div></div>
+    </aside>
+
+    <section class="chat-panel">
+      <header class="chat-header"><div><span class="eyebrow">CURRENT ROOM</span><h2 id="roomTitle"># general</h2></div><div class="connection-pill"><i></i><span>Connected</span></div></header>
+      <div id="messages" class="messages"></div>
+      <div id="typingIndicator" class="typing-indicator"></div>
+      <form id="messageForm" class="message-composer"><textarea id="messageInput" rows="1" maxlength="1000" placeholder="Message #general" aria-label="Message"></textarea><button class="send-btn" type="submit">Send</button></form>
+    </section>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
