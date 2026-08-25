@@ -151,39 +151,42 @@ relay-realtime-chat/
 
 This project demonstrates:
 
-Node.js
-Express
-Socket.IO
-WebSockets
-Event-driven architecture
-Client-server communication
-Real-time events
-Broadcasting
-Rooms
-User presence
-JavaScript Maps
-DOM manipulation
-Event listeners
-Server-side state
-Responsive CSS
-Mobile layouts
+``` text 
+- Node.js
+- Express
+- Socket.IO
+- WebSockets
+- Event-driven architecture
+- Client-server communication
+- Real-time events
+- Broadcasting
+- Rooms
+- User presence
+- JavaScript Maps
+- DOM manipulation
+- Event listeners
+- Server-side state
+- Responsive CSS
+- Mobile layouts
+```
 
 ---
 
 ## Future Improvements
 
+``` text
 Possible upgrades include:
 
-User authentication
-MongoDB or PostgreSQL
-Persistent message history
-Private messaging
-Read receipts
-File uploads
-Message reactions
-User avatars
-Moderation controls
-Redis-based scaling
-Better mobile UI
-Deployment with persistent storage
-
+- User authentication
+- MongoDB or PostgreSQL
+- Persistent message history
+- Private messaging
+- Read receipts
+- File uploads
+- Message reactions
+- User avatars
+- Moderation controls
+- Redis-based scaling
+- Better mobile UI
+- Deployment with persistent storage
+```
