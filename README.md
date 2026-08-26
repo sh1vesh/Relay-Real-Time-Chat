@@ -28,6 +28,8 @@ It demonstrates real-time messaging, room-based communication, online presence, 
 
 ![Relay Presence Events](./screenshot/relay-presence-events.png)
 
+### Access the project here : https://relay-real-time-chat.vercel.app/
+
 ---
 
 ## Features
